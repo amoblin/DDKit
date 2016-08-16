@@ -7,5 +7,6 @@ target 'DDKitDemo' do
 
   # Pods for DDKitDemo
   pod 'DDKit', :path => ".."
+  pod 'Masonry'
 
 end

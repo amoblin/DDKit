@@ -7,21 +7,39 @@
 //
 
 #import "ViewController.h"
+#import <Masonry.h>
+
+#import <UILabel+DD.h>
+#import <DDFonts.h>
+#import <UIColor+DD.h>
 
 @interface ViewController ()
+
+@property (nonatomic, strong) UILabel *infoLabel;
 
 @end
 
 @implementation ViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (void)setupSubviews;
+{
+//    UILabel *label = [UILabel labelWithFont:DDSystemFontSize14 textColor:[UIColor colorWithHex:0xFA8910]];
+    UILabel *label = [UILabel labelWithFont:DDSystemFontSize32 textColor:[UIColor colorWithHexString:@"#FA8910"]];
+    [self.view addSubview:label];
+    self.infoLabel = label;
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)configConstraints;
+{
+    [self.infoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.equalTo(self.view);
+        make.top.equalTo(@100);
+    }];
+}
+
+- (void)reloadData;
+{
+    self.infoLabel.text = @"Hello, DDKit!";
 }
 
 @end

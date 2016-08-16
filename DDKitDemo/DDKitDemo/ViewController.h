@@ -6,9 +6,9 @@
 //  Copyright © 2016年 marboo.io. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <DDKit/DDBaseViewController.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : DDBaseViewController
 
 
 @end

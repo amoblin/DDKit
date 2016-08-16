@@ -6,11 +6,6 @@
 //  Copyright © 2016年 marboo. All rights reserved.
 //
 
-#import "Masonry.h"
-#import "UILabel+DD.h"
-#import "DDColors.h"
-#import "DDFonts.h"
-
 @interface DDBaseView : UIView
 
 - (void)setupSubviews;

@@ -26,6 +26,7 @@
     
     [self setupSubviews];
     [self configConstraints];
+    [self reloadData];
 //    [self.navigationItem.backBarButtonItem setAction:@selector(backButtonPressedAction:)];
 }
 
@@ -35,6 +36,11 @@
 }
 
 - (void)configConstraints;
+{
+    // do nothing
+}
+
+- (void)reloadData;
 {
     // do nothing
 }

@@ -17,6 +17,9 @@
 - (void)rightButtonPressed:(UIBarButtonItem *)sender;
 
 - (void)setupSubviews;
+
 - (void)configConstraints;
+
+- (void)reloadData;
 
 @end

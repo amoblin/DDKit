@@ -12,6 +12,9 @@
 @interface DDBaseView : UIView
 
 - (void)setupSubviews;
+
 - (void)configConstraints;
+
+- (void)reloadData;
 
 @end

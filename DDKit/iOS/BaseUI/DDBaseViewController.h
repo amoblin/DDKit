@@ -11,6 +11,7 @@
 @interface DDBaseViewController : UIViewController
 
 @property (nonatomic, copy) void (^popupSelfBlock)();
+@property (nonatomic, strong) UILabel *navTitleLabel;
 
 - (void)leftButtonPressed:(UIBarButtonItem *)sender;
 

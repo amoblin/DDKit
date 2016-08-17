@@ -24,6 +24,8 @@
         self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     }
     
+    self.navigationItem.titleView = self.navTitleLabel;
+
     [self setupSubviews];
     [self configConstraints];
     [self reloadData];

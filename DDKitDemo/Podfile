@@ -6,7 +6,7 @@ target 'DDKitDemo' do
   # use_frameworks!
 
   # Pods for DDKitDemo
-  pod 'DDKit', :path => ".."
+  pod 'DDUIKit', :path => ".."
   pod 'Masonry'
 
 end

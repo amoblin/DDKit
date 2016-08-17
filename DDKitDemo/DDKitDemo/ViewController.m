@@ -39,7 +39,7 @@
 
 - (void)reloadData;
 {
-    self.infoLabel.text = @"Hello, DDKit!";
+    self.infoLabel.text = @"Hello, DDUIKit!";
 }
 
 @end

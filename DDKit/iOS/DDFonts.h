@@ -15,6 +15,7 @@
 #define DDSystemFontSize13         [UIFont systemFontOfSize:13]
 #define DDSystemFontSize14         [UIFont systemFontOfSize:14]
 #define DDSystemFontSize16         [UIFont systemFontOfSize:16]
+#define DDSystemFontSize17         [UIFont systemFontOfSize:17]
 #define DDSystemFontSize18         [UIFont systemFontOfSize:18]
 #define DDSystemFontSize19         [UIFont systemFontOfSize:19]
 #define DDSystemFontSize20         [UIFont systemFontOfSize:20]

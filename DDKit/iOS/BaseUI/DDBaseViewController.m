@@ -26,26 +26,35 @@
     
     self.navigationItem.titleView = self.navTitleLabel;
 
+    [self resetData];
     [self setupSubviews];
     [self configConstraints];
     [self reloadData];
 //    [self.navigationItem.backBarButtonItem setAction:@selector(backButtonPressedAction:)];
 }
 
+#pragma mark - DDUIKit Work Flow
+
+- (void)resetData;
+{
+    // should be implemented by subclass
+}
+
 - (void)setupSubviews;
 {
-    // do nothing
+    // should be implemented by subclass
 }
 
 - (void)configConstraints;
 {
-    // do nothing
+    // should be implemented by subclass
 }
 
 - (void)reloadData;
 {
-    // do nothing
+    // should be implemented by subclass
 }
+
 
 /*
  // plan 1

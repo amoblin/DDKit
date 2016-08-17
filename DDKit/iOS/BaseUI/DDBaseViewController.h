@@ -20,10 +20,16 @@
 
 - (void)rightButtonPressed:(UIBarButtonItem *)sender;
 
+#pragma mark - DDUIKit Work Flow
+
+// init data or reset data
+- (void)resetData;
+
 - (void)setupSubviews;
 
 - (void)configConstraints;
 
+// fetch data
 - (void)reloadData;
 
 @end

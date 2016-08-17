@@ -8,7 +8,7 @@
 
 #import "DDFonts.h"
 #import "UILabel+DD.h"
-#import <UIColor+DD.h>
+#import "UIColor+DD.h"
 
 @interface DDBaseView : UIView
 

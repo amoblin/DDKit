@@ -6,6 +6,9 @@
 //  Copyright © 2016年 marboo. All rights reserved.
 //
 
+#import "UILabel+DD.h"
+#import "DDFonts.h"
+
 @interface DDBaseView : UIView
 
 - (void)setupSubviews;

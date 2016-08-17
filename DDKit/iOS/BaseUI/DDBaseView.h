@@ -6,8 +6,9 @@
 //  Copyright © 2016年 marboo. All rights reserved.
 //
 
-#import "UILabel+DD.h"
 #import "DDFonts.h"
+#import "UILabel+DD.h"
+#import <UIColor+DD.h>
 
 @interface DDBaseView : UIView
 

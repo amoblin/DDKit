@@ -9,10 +9,6 @@
 #import "ViewController.h"
 #import <Masonry.h>
 
-#import <UILabel+DD.h>
-#import <DDFonts.h>
-#import <UIColor+DD.h>
-
 @interface ViewController ()
 
 @property (nonatomic, strong) UILabel *infoLabel;

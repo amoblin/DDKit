@@ -6,7 +6,10 @@
 //  Copyright © 2015年 amoblin. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <DDFonts.h>
+#import <UILabel+DD.h>
+#import <UIColor+DD.h>
+
 
 @interface DDBaseViewController : UIViewController
 

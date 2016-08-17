@@ -1,7 +1,7 @@
 # coding: utf-8
 Pod::Spec.new do |s|
 
-  s.name         = "DDKit"
+  s.name         = "DDUIKit"
   s.version      = "0.0.1"
   s.summary      = "DDKit provides convenient tools for build ui."
 

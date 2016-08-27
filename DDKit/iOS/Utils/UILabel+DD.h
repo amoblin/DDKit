@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DDFonts.h"
+#import "UIColor+DD.h"
 
 @interface UILabel (DD)
 

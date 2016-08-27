@@ -9,6 +9,8 @@
 #ifndef DDMacros_h
 #define DDMacros_h
 
+#define WS(weakSelf)  __weak __typeof(&*self)weakSelf = self;
+
 #define ARC_SYNTHESIZE_SINGLETON_FOR_CLASS_HEADER(SS_CLASSNAME)	\
 + (SS_CLASSNAME *)sharedInstance;
 

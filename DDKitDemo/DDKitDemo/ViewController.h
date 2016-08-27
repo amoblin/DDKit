@@ -7,8 +7,10 @@
 //
 
 #import <DDUIKit/DDBaseViewController.h>
+#import <DDUIKit/DDTableViewController.h>
 
-@interface ViewController : DDBaseViewController
+//@interface ViewController : DDBaseViewController
+@interface ViewController : DDTableViewController
 
 
 @end

@@ -19,6 +19,7 @@
 
 - (void)setupSubviews;
 {
+    [super setupSubviews];
 //    UILabel *label = [UILabel labelWithFont:DDSystemFontSize14 textColor:[UIColor colorWithHex:0xFA8910]];
     UILabel *label = [UILabel labelWithFont:DDSystemFontSize32 textColor:[UIColor colorWithHexString:@"#FA8910"]];
     [self.view addSubview:label];
@@ -27,6 +28,7 @@
 
 - (void)configConstraints;
 {
+    [super configConstraints];
     [self.infoLabel mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.equalTo(self.view);
         make.top.equalTo(@100);

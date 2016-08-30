@@ -29,10 +29,19 @@
 
 - (void)setupSubviews;
 {
+    self.selectionStyle = UITableViewCellSelectionStyleNone;
+
+    self.titleLabel = [UILabel labelWithFont:DDSystemFontSize14 textColor:[UIColor blackColor]];
+    self.titleLabel.numberOfLines = 0;
+    [self.contentView addSubview:self.titleLabel];
 }
 
 - (void)configConstraints;
 {
+    [self.titleLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.equalTo(@10);
+        make.centerY.equalTo(self.contentView);
+    }];
 }
 
 - (void)configCell;

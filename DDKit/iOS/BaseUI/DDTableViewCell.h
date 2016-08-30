@@ -6,9 +6,13 @@
 //
 //
 
-#import <UIKit/UIKit.h>
+#import "UILabel+DD.h"
+#import "DDFonts.h"
+#import "Masonry.h"
 
 @interface DDTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) UILabel *titleLabel;
 
 // 添加布局组件
 - (void)setupSubviews;

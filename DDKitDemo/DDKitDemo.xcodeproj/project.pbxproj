@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7F62E24965785E1C115FAAE6 /* libPods-DDKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E79BCDBC88CB9F0FD8C8A5A9 /* libPods-DDKitDemo.a */; };
-		DA6D25501D83C411003CFC30 /* DDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D254E1D83C411003CFC30 /* DDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA6D25531D83C411003CFC30 /* DDKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D254C1D83C411003CFC30 /* DDKit.framework */; };
-		DA6D25541D83C411003CFC30 /* DDKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D254C1D83C411003CFC30 /* DDKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3788C88B4FFDD3CD14DC42EC /* Pods_DDKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCD36B52910BE03284F0C4 /* Pods_DDKitDemo.framework */; };
+		6EAF5CA850C291FF11C2CA07 /* Pods_DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F203AB055DA738B848BFE14 /* Pods_DDUIKit.framework */; };
+		DA6D25501D83C411003CFC30 /* DDUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D254E1D83C411003CFC30 /* DDUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA6D25531D83C411003CFC30 /* DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D254C1D83C411003CFC30 /* DDUIKit.framework */; };
+		DA6D25541D83C411003CFC30 /* DDUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D254C1D83C411003CFC30 /* DDUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA6D25761D83C43E003CFC30 /* DDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D255A1D83C43E003CFC30 /* DDBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6D25771D83C43E003CFC30 /* DDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D255B1D83C43E003CFC30 /* DDBaseModel.m */; };
 		DA6D25781D83C43E003CFC30 /* DDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D255B1D83C43E003CFC30 /* DDBaseModel.m */; };
@@ -30,7 +31,6 @@
 		DA6D25861D83C43E003CFC30 /* DDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D25671D83C43E003CFC30 /* DDTableViewController.m */; };
 		DA6D25871D83C43E003CFC30 /* DDTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D25671D83C43E003CFC30 /* DDTableViewController.m */; };
 		DA6D25881D83C43E003CFC30 /* DDFonts.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D25681D83C43E003CFC30 /* DDFonts.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA6D25891D83C43E003CFC30 /* DDKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D25691D83C43E003CFC30 /* DDKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6D258A1D83C43E003CFC30 /* DDMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D256A1D83C43E003CFC30 /* DDMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6D258B1D83C43E003CFC30 /* NSDate+DD.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D256C1D83C43E003CFC30 /* NSDate+DD.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6D258C1D83C43E003CFC30 /* NSDate+DD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D256D1D83C43E003CFC30 /* NSDate+DD.m */; };
@@ -73,7 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DA6D25541D83C411003CFC30 /* DDKit.framework in Embed Frameworks */,
+				DA6D25541D83C411003CFC30 /* DDUIKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,11 +82,15 @@
 
 /* Begin PBXFileReference section */
 		02D6C1D133E98E7FB2D2F066 /* Pods-DDKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDKitDemo/Pods-DDKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2E2E0CBBF4036396E686D215 /* Pods-DDUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDUIKit/Pods-DDUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		6A959EAE3EA78637ABA7BC3D /* Pods-DDUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDUIKit/Pods-DDUIKit.release.xcconfig"; sourceTree = "<group>"; };
+		7F203AB055DA738B848BFE14 /* Pods_DDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA7A833E1B6056297CCE6E8 /* Pods-DDKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDKit/Pods-DDKit.release.xcconfig"; sourceTree = "<group>"; };
 		C19665CED422E50CAA2E708C /* Pods-DDKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDKit/Pods-DDKit.debug.xcconfig"; sourceTree = "<group>"; };
 		C43F46AD3E4EF97041C29A0E /* Pods_DDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA6D254C1D83C411003CFC30 /* DDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA6D254E1D83C411003CFC30 /* DDKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDKit.h; sourceTree = "<group>"; };
+		D3FCD36B52910BE03284F0C4 /* Pods_DDKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6D254C1D83C411003CFC30 /* DDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA6D254E1D83C411003CFC30 /* DDUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDUIKit.h; sourceTree = "<group>"; };
 		DA6D254F1D83C411003CFC30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6D255A1D83C43E003CFC30 /* DDBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDBaseModel.h; sourceTree = "<group>"; };
 		DA6D255B1D83C43E003CFC30 /* DDBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDBaseModel.m; sourceTree = "<group>"; };
@@ -123,7 +127,6 @@
 		DAB503DA1D63CECB00B56E1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DAB503DD1D63CECB00B56E1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DAB503DF1D63CECB00B56E1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E79BCDBC88CB9F0FD8C8A5A9 /* libPods-DDKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DDKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED1E3961ED104BB27717A608 /* Pods-DDKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDKitDemo/Pods-DDKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,6 +136,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E73F796B49DD286F22C895EE /* Pods_DDKit.framework in Frameworks */,
+				6EAF5CA850C291FF11C2CA07 /* Pods_DDUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,8 +144,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7F62E24965785E1C115FAAE6 /* libPods-DDKitDemo.a in Frameworks */,
-				DA6D25531D83C411003CFC30 /* DDKit.framework in Frameworks */,
+				DA6D25531D83C411003CFC30 /* DDUIKit.framework in Frameworks */,
+				3788C88B4FFDD3CD14DC42EC /* Pods_DDKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -151,8 +155,9 @@
 		0E54FDDCA3B1D47EC05FB00F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E79BCDBC88CB9F0FD8C8A5A9 /* libPods-DDKitDemo.a */,
 				C43F46AD3E4EF97041C29A0E /* Pods_DDKit.framework */,
+				D3FCD36B52910BE03284F0C4 /* Pods_DDKitDemo.framework */,
+				7F203AB055DA738B848BFE14 /* Pods_DDUIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,6 +169,8 @@
 				02D6C1D133E98E7FB2D2F066 /* Pods-DDKitDemo.release.xcconfig */,
 				C19665CED422E50CAA2E708C /* Pods-DDKit.debug.xcconfig */,
 				9CA7A833E1B6056297CCE6E8 /* Pods-DDKit.release.xcconfig */,
+				2E2E0CBBF4036396E686D215 /* Pods-DDUIKit.debug.xcconfig */,
+				6A959EAE3EA78637ABA7BC3D /* Pods-DDUIKit.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -171,7 +178,7 @@
 		DA6D254D1D83C411003CFC30 /* DDKit */ = {
 			isa = PBXGroup;
 			children = (
-				DA6D254E1D83C411003CFC30 /* DDKit.h */,
+				DA6D254E1D83C411003CFC30 /* DDUIKit.h */,
 				DA6D254F1D83C411003CFC30 /* Info.plist */,
 			);
 			path = DDKit;
@@ -250,7 +257,7 @@
 			isa = PBXGroup;
 			children = (
 				DAB503CB1D63CECB00B56E1B /* DDKitDemo.app */,
-				DA6D254C1D83C411003CFC30 /* DDKit.framework */,
+				DA6D254C1D83C411003CFC30 /* DDUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -286,13 +293,12 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6D25891D83C43E003CFC30 /* DDKit.h in Headers */,
 				DA6D25941D83C43E003CFC30 /* UILabel+DD.h in Headers */,
 				DA6D25851D83C43E003CFC30 /* DDTableViewController.h in Headers */,
 				DA6D25881D83C43E003CFC30 /* DDFonts.h in Headers */,
 				DA6D258B1D83C43E003CFC30 /* NSDate+DD.h in Headers */,
 				DA6D258A1D83C43E003CFC30 /* DDMacros.h in Headers */,
-				DA6D25501D83C411003CFC30 /* DDKit.h in Headers */,
+				DA6D25501D83C411003CFC30 /* DDUIKit.h in Headers */,
 				DA6D257F1D83C43E003CFC30 /* DDCollectionViewCell.h in Headers */,
 				DA6D25971D83C43E003CFC30 /* UIView+Frame.h in Headers */,
 				DA6D25821D83C43E003CFC30 /* DDTableViewCell.h in Headers */,
@@ -307,9 +313,9 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		DA6D254B1D83C411003CFC30 /* DDKit */ = {
+		DA6D254B1D83C411003CFC30 /* DDUIKit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = DA6D25571D83C411003CFC30 /* Build configuration list for PBXNativeTarget "DDKit" */;
+			buildConfigurationList = DA6D25571D83C411003CFC30 /* Build configuration list for PBXNativeTarget "DDUIKit" */;
 			buildPhases = (
 				DD71EDD4D78737CFBBA8219A /* [CP] Check Pods Manifest.lock */,
 				DA6D25471D83C411003CFC30 /* Sources */,
@@ -322,9 +328,9 @@
 			);
 			dependencies = (
 			);
-			name = DDKit;
+			name = DDUIKit;
 			productName = DDKit;
-			productReference = DA6D254C1D83C411003CFC30 /* DDKit.framework */;
+			productReference = DA6D254C1D83C411003CFC30 /* DDUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DAB503CA1D63CECB00B56E1B /* DDKitDemo */ = {
@@ -355,7 +361,7 @@
 		DAB503C31D63CECB00B56E1B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = marboo.io;
 				TargetAttributes = {
 					DA6D254B1D83C411003CFC30 = {
@@ -383,7 +389,7 @@
 			projectRoot = "";
 			targets = (
 				DAB503CA1D63CECB00B56E1B /* DDKitDemo */,
-				DA6D254B1D83C411003CFC30 /* DDKit */,
+				DA6D254B1D83C411003CFC30 /* DDUIKit */,
 			);
 		};
 /* End PBXProject section */
@@ -451,7 +457,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDKit/Pods-DDKit-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDUIKit/Pods-DDUIKit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DD71EDD4D78737CFBBA8219A /* [CP] Check Pods Manifest.lock */ = {
@@ -531,7 +537,7 @@
 /* Begin PBXTargetDependency section */
 		DA6D25521D83C411003CFC30 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = DA6D254B1D83C411003CFC30 /* DDKit */;
+			target = DA6D254B1D83C411003CFC30 /* DDUIKit */;
 			targetProxy = DA6D25511D83C411003CFC30 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -558,13 +564,13 @@
 /* Begin XCBuildConfiguration section */
 		DA6D25551D83C411003CFC30 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C19665CED422E50CAA2E708C /* Pods-DDKit.debug.xcconfig */;
+			baseConfigurationReference = 2E2E0CBBF4036396E686D215 /* Pods-DDUIKit.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
@@ -585,7 +591,7 @@
 		};
 		DA6D25561D83C411003CFC30 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9CA7A833E1B6056297CCE6E8 /* Pods-DDKit.release.xcconfig */;
+			baseConfigurationReference = 6A959EAE3EA78637ABA7BC3D /* Pods-DDUIKit.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -623,8 +629,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -668,8 +676,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -722,7 +732,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		DA6D25571D83C411003CFC30 /* Build configuration list for PBXNativeTarget "DDKit" */ = {
+		DA6D25571D83C411003CFC30 /* Build configuration list for PBXNativeTarget "DDUIKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				DA6D25551D83C411003CFC30 /* Debug */,

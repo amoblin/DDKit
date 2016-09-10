@@ -6,7 +6,7 @@
 //  Copyright © 2015年 amoblin. All rights reserved.
 //
 
-#import "JSONModel.h"
+#import <JSONModel/JSONModel.h>
 
 @interface DDBaseModel : JSONModel
 

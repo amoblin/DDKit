@@ -16,4 +16,5 @@ FOUNDATION_EXPORT const unsigned char DDKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <DDKit/PublicHeader.h>
 
-
+#import "UILabel+DD.h"
+#import "DDBaseModel.h"

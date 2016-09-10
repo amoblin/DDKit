@@ -1,6 +1,6 @@
 
 $projectName = "DDKitDemo"
-$scheme = "DDKit"
+$scheme = "DDUIKit"
 $PROJECT_NAME = $projectName
 $BUILD_DIR = "Build"
 $CONFIGURATION = "Release"

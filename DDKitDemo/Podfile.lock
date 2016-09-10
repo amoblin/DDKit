@@ -1,19 +1,15 @@
 PODS:
-  - DDUIKit (0.1)
+  - JSONModel (1.4.0)
   - Masonry (1.0.1)
 
 DEPENDENCIES:
-  - DDUIKit (from `..`)
+  - JSONModel
   - Masonry
 
-EXTERNAL SOURCES:
-  DDUIKit:
-    :path: ".."
-
 SPEC CHECKSUMS:
-  DDUIKit: 6f156284baeab9fd14d5f2b7513b3d94f85584ed
+  JSONModel: 58fe3f8c29ff95ed94e7ee7dde87e807f5da5371
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
 
-PODFILE CHECKSUM: da534c0e4b209a05eee84b183016f7a0267bf9b3
+PODFILE CHECKSUM: 96a9f9e11ae29dab2987757651990befe34f0cbb
 
 COCOAPODS: 1.0.1

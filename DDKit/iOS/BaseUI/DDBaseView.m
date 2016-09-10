@@ -16,6 +16,7 @@
     if (self) {
         [self setupSubviews];
         [self configConstraints];
+        [self resetData];
         [self reloadData];
     }
     return self;
@@ -29,6 +30,11 @@
 - (void)configConstraints;
 {
     // override for config constraints
+}
+
+- (void)resetData;
+{
+    // override for reset data
 }
 
 - (void)reloadData;

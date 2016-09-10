@@ -13,6 +13,7 @@
 @interface DDTableViewCell : UITableViewCell
 
 @property (nonatomic, strong) UILabel *titleLabel;
+@property (nonatomic, strong) UIButton *addButton;
 
 // 添加布局组件
 - (void)setupSubviews;

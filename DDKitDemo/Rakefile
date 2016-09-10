@@ -1,0 +1,20 @@
+
+$projectName = "DDKitDemo"
+$scheme = "DDKit"
+$PROJECT_NAME = $projectName
+$BUILD_DIR = "Build"
+$CONFIGURATION = "Release"
+$UNIVERSAL_OUTPUTFOLDER = "#{$BUILD_DIR}/#{$CONFIGURATION}-universal"
+
+task :default do |t|
+  sh "mkdir -p \"#{$UNIVERSAL_OUTPUTFOLDER}\""
+
+	sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos10.0 clean"
+  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos10.0 SYMROOT=$(PWD)/Build"
+  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphonesimulator10.0 SYMROOT=$(PWD)/Build"
+
+  sh "cp -R \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework\" \"#{$UNIVERSAL_OUTPUTFOLDER}/\""
+
+  sh "lipo -create -output \"#{$UNIVERSAL_OUTPUTFOLDER}/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphonesimulator/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework/#{$scheme}\""
+
+end

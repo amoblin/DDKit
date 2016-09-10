@@ -8,6 +8,10 @@
 
 #import "DDTableViewCell.h"
 
+@interface DDTableViewCell()
+
+@end
+
 @implementation DDTableViewCell
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
@@ -30,7 +34,11 @@
 - (void)setupSubviews;
 {
     self.selectionStyle = UITableViewCellSelectionStyleNone;
-
+    
+    self.addButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
+    [self.contentView addSubview:self.addButton];
+    [self.addButton setHidden:YES];
+    
     self.titleLabel = [UILabel labelWithFont:DDSystemFontSize14 textColor:[UIColor blackColor]];
     self.titleLabel.numberOfLines = 0;
     [self.contentView addSubview:self.titleLabel];

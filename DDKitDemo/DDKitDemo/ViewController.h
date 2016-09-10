@@ -6,8 +6,8 @@
 //  Copyright © 2016年 marboo.io. All rights reserved.
 //
 
-#import <DDUIKit/DDBaseViewController.h>
-#import <DDUIKit/DDTableViewController.h>
+#import "DDBaseViewController.h"
+#import "DDTableViewController.h"
 
 //@interface ViewController : DDBaseViewController
 @interface ViewController : DDTableViewController

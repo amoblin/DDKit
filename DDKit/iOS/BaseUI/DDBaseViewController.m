@@ -9,7 +9,7 @@
 #import "DDBaseViewController.h"
 #import "DDMacros.h"
 
-@interface DDBaseViewController ()
+@interface DDBaseViewController () <UIBarPositioningDelegate>
 
 @end
 
@@ -26,9 +26,10 @@
     
     self.navigationItem.titleView = self.navTitleLabel;
 
-    [self resetData];
     [self setupSubviews];
     [self configConstraints];
+    [self resetData];
+    [self setupModelArray];
     [self reloadData];
 //    [self.navigationItem.backBarButtonItem setAction:@selector(backButtonPressedAction:)];
 }
@@ -46,6 +47,11 @@
 }
 
 - (void)configConstraints;
+{
+    // should be implemented by subclass
+}
+
+- (void)setupModelArray;
 {
     // should be implemented by subclass
 }
@@ -94,6 +100,41 @@
 - (void)leftButtonPressed:(UIBarButtonItem *)sender;
 {
     // do nothing
+}
+
+- (void)addTopToolbar;
+{
+    UINavigationBar *bar;
+    if (IOS_7_OR_LATER) {
+        bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 20, self.view.frame.size.width, 44)];
+    } else {
+        bar = [[UINavigationBar alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 44)];
+    }
+//    bar.backgroundColor = UIColorFromRGB(122.0, 122.0, 122.0);
+    UINavigationItem *item = [[UINavigationItem alloc] initWithTitle:Local(@"Title")];
+    self.navItem = item;
+    [bar setItems:@[item]];
+    item.rightBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:Local(@"Close")
+                                                               style:UIBarButtonItemStyleDone
+                                                              target:self
+                                                              action:@selector(close:)];
+    [bar setDelegate:self];
+    self.navBar = bar;
+    [self.view addSubview:bar];
+
+//    CGFloat height = self.view.frame.size.height - 44 - 64;
+//    self.mTableView.frame = CGRectMake(0, 64, self.view.frame.size.width, height);
+}
+
+- (UIBarPosition)positionForBar:(id<UIBarPositioning>)bar;
+{
+    return UIBarPositionTopAttached;
+}
+
+- (void)close:(UINavigationItem *)sender;
+{
+    [self.view endEditing:YES];
+    [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

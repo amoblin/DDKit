@@ -9,9 +9,12 @@
 #import "DDFonts.h"
 #import "UILabel+DD.h"
 #import "UIColor+DD.h"
-
+#import "Masonry.h"
 
 @interface DDBaseViewController : UIViewController
+
+@property (strong, nonatomic) UINavigationBar *navBar;
+@property (strong, nonatomic) UINavigationItem *navItem;
 
 @property (nonatomic, copy) void (^popupSelfBlock)();
 @property (nonatomic, strong) UILabel *navTitleLabel;
@@ -31,5 +34,9 @@
 
 // fetch data
 - (void)reloadData;
+
+- (void)addTopToolbar;
+
+- (void)close:(UINavigationItem *)sender;
 
 @end

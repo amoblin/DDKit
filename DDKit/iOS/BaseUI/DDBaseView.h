@@ -16,6 +16,8 @@
 
 - (void)configConstraints;
 
+- (void)resetData;
+
 - (void)reloadData;
 
 @end

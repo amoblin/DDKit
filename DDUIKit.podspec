@@ -34,4 +34,5 @@ DDKit provides convenient tools for build ui."
 
   s.requires_arc = true
 
+  s.dependency 'JSONModel'
 end

@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>DDKit.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
 		<key>DDKitDemo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +17,11 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DA6D254B1D83C411003CFC30</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DAB503CA1D63CECB00B56E1B</key>
 		<dict>
 			<key>primary</key>

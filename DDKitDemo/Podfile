@@ -8,7 +8,7 @@ target 'DDKitDemo' do
 end
 
 target 'DDKit' do
-  # use_frameworks!
+  use_frameworks!
   pod 'Masonry'
   pod 'JSONModel'
 end

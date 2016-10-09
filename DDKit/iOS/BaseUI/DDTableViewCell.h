@@ -8,7 +8,7 @@
 
 #import "UILabel+DD.h"
 #import "DDFonts.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 
 @interface DDTableViewCell : UITableViewCell
 

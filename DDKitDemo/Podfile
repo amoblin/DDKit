@@ -9,7 +9,7 @@ target 'DDKitDemo' do
 end
 
 target 'DDUIKit' do
-  use_frameworks!
+  #use_frameworks!
   pod 'Masonry'
   pod 'JSONModel'
 end

@@ -37,6 +37,7 @@
     
     self.addButton = [UIButton buttonWithType:UIButtonTypeContactAdd];
     [self.contentView addSubview:self.addButton];
+    [self.addButton addTarget:self action:@selector(addButtonPressed:) forControlEvents:UIControlEventTouchUpInside];
     [self.addButton setHidden:YES];
     
     self.titleLabel = [UILabel labelWithFont:DDSystemFontSize14 textColor:[UIColor blackColor]];
@@ -54,6 +55,11 @@
 
 - (void)configCell;
 {
+}
+
+- (void)addButtonPressed:(UIButton *)sender;
+{
+    
 }
 
 @end

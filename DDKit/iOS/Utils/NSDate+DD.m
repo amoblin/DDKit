@@ -54,4 +54,11 @@
     return [dateFormatter stringFromDate:self];
 }
 
+- (NSString *)timeString;
+{
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"HH:mm"];
+    return [dateFormatter stringFromDate:self];
+}
+
 @end

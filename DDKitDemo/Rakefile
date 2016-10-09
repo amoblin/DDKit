@@ -4,7 +4,8 @@ $scheme = "DDUIKit"
 $PROJECT_NAME = $projectName
 $BUILD_DIR = "Build"
 $CONFIGURATION = "Release"
-$UNIVERSAL_OUTPUTFOLDER = "#{$BUILD_DIR}/#{$CONFIGURATION}-universal"
+#$UNIVERSAL_OUTPUTFOLDER = "#{$BUILD_DIR}/#{$CONFIGURATION}-universal"
+$UNIVERSAL_OUTPUTFOLDER = "#{$BUILD_DIR}"
 
 task :default do |t|
   sh "mkdir -p \"#{$UNIVERSAL_OUTPUTFOLDER}\""

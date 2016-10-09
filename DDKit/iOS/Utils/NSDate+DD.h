@@ -13,5 +13,6 @@
 - (NSString *)humanableInfo;
 
 - (NSString *)dateString;
+- (NSString *)timeString;
 
 @end

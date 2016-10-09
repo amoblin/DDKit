@@ -27,10 +27,10 @@ DDKit provides convenient tools for build ui."
 
   s.source       = { :git => "https://github.com/amoblin/DDKit.git", :tag => "#{s.version}" }
 
-  s.source_files  = "DDKit", "DDKit/**/*.{h,m}"
+  s.source_files  = "Classes", "Classes/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "DDKit/**/*.h"
+  s.public_header_files = "Classes/**/*.h"
 
   s.requires_arc = true
 

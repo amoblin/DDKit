@@ -95,6 +95,7 @@
 - (void)rightButtonPressed:(UIBarButtonItem *)sender;
 {
     // do nothing
+    NSLog(@"right button pressed");
 }
 
 - (void)leftButtonPressed:(UIBarButtonItem *)sender;

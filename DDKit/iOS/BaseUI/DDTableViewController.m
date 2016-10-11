@@ -8,7 +8,7 @@
 
 #import "DDTableViewController.h"
 #import "DDTableViewCell.h"
-#import "Masonry.h"
+#import <Masonry/Masonry.h>
 
 #define DEMO_COUNT 3
 #define DEMO_ID @"cellId"

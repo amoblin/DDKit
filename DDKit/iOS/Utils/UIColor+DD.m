@@ -69,7 +69,7 @@ CGFloat colorComponentFrom(NSString *string, NSUInteger start, NSUInteger length
 
 + (UIColor *) colorWithHex:(uint) hex
 {
-    int red, green, blue, alpha;
+    int red, green, blue;
 
     blue = hex & 0x000000FF;
     green = ((hex & 0x0000FF00) >> 8);

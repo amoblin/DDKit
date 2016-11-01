@@ -9,7 +9,7 @@
 #import "DDBaseViewController.h"
 #import "DDMacros.h"
 
-@interface DDBaseViewController () <UIBarPositioningDelegate>
+@interface DDBaseViewController () <UINavigationBarDelegate>
 
 @end
 

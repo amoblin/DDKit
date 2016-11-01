@@ -14,13 +14,8 @@
 
 + (JSONKeyMapper *)keyMapper;
 {
-    JSONKeyMapper *keeper = [JSONKeyMapper mapperFromUnderscoreCaseToCamelCase];
-    return [[JSONKeyMapper alloc] initWithJSONToModelBlock:^NSString *(NSString *keyName) {
-        if ([[self customKeyMapper] objectForKey:keyName]) {
-            return [[self customKeyMapper] objectForKey:keyName];
-        }
-        return keeper.JSONToModelKeyBlock(keyName);
-    } modelToJSONBlock:^NSString *(NSString *keyName) {
+    JSONKeyMapper *keeper = [JSONKeyMapper mapperForSnakeCase];
+    return [[JSONKeyMapper alloc] initWithModelToJSONBlock:^NSString *(NSString *keyName) {
         for (NSString *key in [[self customKeyMapper] allKeys]) {
             if ([keyName isEqualToString:[[self customKeyMapper] objectForKey:key]]) {
                 return key;
@@ -28,6 +23,15 @@
         }
         return keeper.modelToJSONKeyBlock(keyName);
     }];
+    /*
+    return [[JSONKeyMapper alloc] initWithJSONToModelBlock:^NSString *(NSString *keyName) {
+        if ([[self customKeyMapper] objectForKey:keyName]) {
+            return [[self customKeyMapper] objectForKey:keyName];
+        }
+        return keeper.JSONToModelKeyBlock(keyName);
+    } modelToJSONBlock:^NSString *(NSString *keyName) {
+    }];
+     */
 }
 
 + (NSDictionary *)customKeyMapper;
@@ -67,6 +71,11 @@
 - (BOOL)isValid;
 {
     return (self.errCode == kNetCodeSuccess);
+}
+
+- (NSString *)errMessage;
+{
+    return @"";
 }
 
 @end

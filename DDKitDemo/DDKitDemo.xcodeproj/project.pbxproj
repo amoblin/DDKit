@@ -10,8 +10,6 @@
 		3788C88B4FFDD3CD14DC42EC /* Pods_DDKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCD36B52910BE03284F0C4 /* Pods_DDKitDemo.framework */; };
 		6B7C330D9ED1771972DD9263 /* Pods_DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A6ED97612560BC5F4C3DD1 /* Pods_DDUIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		DA6D25501D83C411003CFC30 /* DDUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D254E1D83C411003CFC30 /* DDUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DA6D25531D83C411003CFC30 /* DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D254C1D83C411003CFC30 /* DDUIKit.framework */; };
-		DA6D25541D83C411003CFC30 /* DDUIKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = DA6D254C1D83C411003CFC30 /* DDUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA6D25761D83C43E003CFC30 /* DDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D255A1D83C43E003CFC30 /* DDBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6D25771D83C43E003CFC30 /* DDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D255B1D83C43E003CFC30 /* DDBaseModel.m */; };
 		DA6D25781D83C43E003CFC30 /* DDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D255B1D83C43E003CFC30 /* DDBaseModel.m */; };
@@ -54,30 +52,6 @@
 		DAB503DB1D63CECB00B56E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB503DA1D63CECB00B56E1B /* Assets.xcassets */; };
 		DAB503DE1D63CECB00B56E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB503DC1D63CECB00B56E1B /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		DA6D25511D83C411003CFC30 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DAB503C31D63CECB00B56E1B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = DA6D254B1D83C411003CFC30;
-			remoteInfo = DDKit;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		DA6D25581D83C411003CFC30 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				DA6D25541D83C411003CFC30 /* DDUIKit.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		02D6C1D133E98E7FB2D2F066 /* Pods-DDKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDKitDemo/Pods-DDKitDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -142,7 +116,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA6D25531D83C411003CFC30 /* DDUIKit.framework in Frameworks */,
 				3788C88B4FFDD3CD14DC42EC /* Pods_DDKitDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,12 +314,10 @@
 				DAB503C91D63CECB00B56E1B /* Resources */,
 				AE0CF3068268C3A16A6C3FA2 /* [CP] Embed Pods Frameworks */,
 				EE8C0124AFED65E334CD0C28 /* [CP] Copy Pods Resources */,
-				DA6D25581D83C411003CFC30 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				DA6D25521D83C411003CFC30 /* PBXTargetDependency */,
 			);
 			name = DDKitDemo;
 			productName = DDKitDemo;
@@ -532,14 +503,6 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
-/* Begin PBXTargetDependency section */
-		DA6D25521D83C411003CFC30 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = DA6D254B1D83C411003CFC30 /* DDUIKit */;
-			targetProxy = DA6D25511D83C411003CFC30 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
 /* Begin PBXVariantGroup section */
 		DAB503D71D63CECB00B56E1B /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -710,6 +673,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
 				INFOPLIST_FILE = DDKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.DDKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -723,6 +687,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 5ELCMRHSMM;
 				INFOPLIST_FILE = DDKitDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.DDKitDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";

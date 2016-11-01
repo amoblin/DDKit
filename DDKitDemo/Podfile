@@ -1,15 +1,14 @@
 # Uncomment this line to define a global platform for your project
 
+use_frameworks!
 platform :ios, '8.0'
 
 target 'DDKitDemo' do
-  use_frameworks!
   pod 'JSONModel'
   pod 'Masonry'
 end
 
 target 'DDUIKit' do
-  use_frameworks!
   pod 'Masonry'
   pod 'JSONModel'
 end

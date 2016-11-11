@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DDUIKit"
-  s.version      = "0.4"
+  s.version      = "0.6"
   s.summary      = "DDKit provides convenient tools for build ui."
 
   s.description  = <<-DESC
@@ -33,8 +33,8 @@ DDKit provides convenient tools for build ui."
 
   s.requires_arc = true
 
-  s.osx.exclude_files = ["DDKit/iOS]"]
-  s.ios.exclude_files = ["DDKit/OSX]"]
+  s.osx.exclude_files = ["DDKit/iOS"]
+  s.ios.exclude_files = ["DDKit/OSX"]
 
   s.dependency 'JSONModel'
   s.dependency 'Masonry'

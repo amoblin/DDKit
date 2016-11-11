@@ -20,7 +20,7 @@ DDKit provides convenient tools for build ui."
   # s.social_media_url   = "http://twitter.com/amoblin@mbp"
 
   s.ios.deployment_target = "8.0"
-#  s.osx.deployment_target = "10.7"
+  s.osx.deployment_target = "10.8"
   # s.watchos.deployment_target = "2.0"
   # s.tvos.deployment_target = "9.0"
 
@@ -32,6 +32,9 @@ DDKit provides convenient tools for build ui."
   s.public_header_files = "DDKit/**/*.h"
 
   s.requires_arc = true
+
+  s.osx.exclude_files = ["DDKit/iOS]"]
+  s.ios.exclude_files = ["DDKit/OSX]"]
 
   s.dependency 'JSONModel'
   s.dependency 'Masonry'

@@ -12,11 +12,26 @@
 		<key>DDUIKit.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>4</integer>
+			<integer>1</integer>
+		</dict>
+		<key>DDUIKitOSX.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>DA61818D1DD67AB000FF7700</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>DA61819A1DD67E2A00FF7700</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>DA6D254B1D83C411003CFC30</key>
 		<dict>
 			<key>primary</key>

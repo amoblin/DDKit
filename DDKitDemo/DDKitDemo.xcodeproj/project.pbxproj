@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3788C88B4FFDD3CD14DC42EC /* Pods_DDKitDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3FCD36B52910BE03284F0C4 /* Pods_DDKitDemo.framework */; };
 		6B7C330D9ED1771972DD9263 /* Pods_DDUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77A6ED97612560BC5F4C3DD1 /* Pods_DDUIKit.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		DA5190D21DECFC5000F62F9E /* DDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D255A1D83C43E003CFC30 /* DDBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DA5190D31DECFC5500F62F9E /* DDBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D255B1D83C43E003CFC30 /* DDBaseModel.m */; };
 		DA61819F1DD67E2A00FF7700 /* DDUIKitOSX.h in Headers */ = {isa = PBXBuildFile; fileRef = DA61819D1DD67E2A00FF7700 /* DDUIKitOSX.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6D25501D83C411003CFC30 /* DDUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D254E1D83C411003CFC30 /* DDUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6D25761D83C43E003CFC30 /* DDBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D255A1D83C43E003CFC30 /* DDBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -52,18 +54,22 @@
 		DAB503D91D63CECB00B56E1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB503D71D63CECB00B56E1B /* Main.storyboard */; };
 		DAB503DB1D63CECB00B56E1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DAB503DA1D63CECB00B56E1B /* Assets.xcassets */; };
 		DAB503DE1D63CECB00B56E1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DAB503DC1D63CECB00B56E1B /* LaunchScreen.storyboard */; };
+		F36997213FAA0C26A53A4B48 /* Pods_DDUIKitOSX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D988DC7B87AF7E316385361 /* Pods_DDUIKitOSX.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		02D6C1D133E98E7FB2D2F066 /* Pods-DDKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDKitDemo/Pods-DDKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2E2E0CBBF4036396E686D215 /* Pods-DDUIKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDUIKit/Pods-DDUIKit.debug.xcconfig"; sourceTree = "<group>"; };
+		4D988DC7B87AF7E316385361 /* Pods_DDUIKitOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDUIKitOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		595A3EDD12173D37E007EF3F /* Pods-DDUIKitOSX.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKitOSX.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDUIKitOSX/Pods-DDUIKitOSX.debug.xcconfig"; sourceTree = "<group>"; };
 		6A959EAE3EA78637ABA7BC3D /* Pods-DDUIKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDUIKit/Pods-DDUIKit.release.xcconfig"; sourceTree = "<group>"; };
 		77A6ED97612560BC5F4C3DD1 /* Pods_DDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA7A833E1B6056297CCE6E8 /* Pods-DDKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDKit.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDKit/Pods-DDKit.release.xcconfig"; sourceTree = "<group>"; };
+		B833537EA9BACFE06616BCC2 /* Pods-DDUIKitOSX.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDUIKitOSX.release.xcconfig"; path = "Pods/Target Support Files/Pods-DDUIKitOSX/Pods-DDUIKitOSX.release.xcconfig"; sourceTree = "<group>"; };
 		C19665CED422E50CAA2E708C /* Pods-DDKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DDKit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DDKit/Pods-DDKit.debug.xcconfig"; sourceTree = "<group>"; };
 		C43F46AD3E4EF97041C29A0E /* Pods_DDKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3FCD36B52910BE03284F0C4 /* Pods_DDKitDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DDKitDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DA61819B1DD67E2A00FF7700 /* DDUIKitOSX.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDUIKitOSX.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA61819B1DD67E2A00FF7700 /* DDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA61819D1DD67E2A00FF7700 /* DDUIKitOSX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DDUIKitOSX.h; sourceTree = "<group>"; };
 		DA61819E1DD67E2A00FF7700 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DA6D254C1D83C411003CFC30 /* DDUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DDUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -112,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F36997213FAA0C26A53A4B48 /* Pods_DDUIKitOSX.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +147,7 @@
 				C43F46AD3E4EF97041C29A0E /* Pods_DDKit.framework */,
 				D3FCD36B52910BE03284F0C4 /* Pods_DDKitDemo.framework */,
 				77A6ED97612560BC5F4C3DD1 /* Pods_DDUIKit.framework */,
+				4D988DC7B87AF7E316385361 /* Pods_DDUIKitOSX.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,6 +161,8 @@
 				9CA7A833E1B6056297CCE6E8 /* Pods-DDKit.release.xcconfig */,
 				2E2E0CBBF4036396E686D215 /* Pods-DDUIKit.debug.xcconfig */,
 				6A959EAE3EA78637ABA7BC3D /* Pods-DDUIKit.release.xcconfig */,
+				595A3EDD12173D37E007EF3F /* Pods-DDUIKitOSX.debug.xcconfig */,
+				B833537EA9BACFE06616BCC2 /* Pods-DDUIKitOSX.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -250,7 +260,7 @@
 			children = (
 				DAB503CB1D63CECB00B56E1B /* DDKitDemo.app */,
 				DA6D254C1D83C411003CFC30 /* DDUIKit.framework */,
-				DA61819B1DD67E2A00FF7700 /* DDUIKitOSX.framework */,
+				DA61819B1DD67E2A00FF7700 /* DDUIKit.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA61819F1DD67E2A00FF7700 /* DDUIKitOSX.h in Headers */,
+				DA5190D21DECFC5000F62F9E /* DDBaseModel.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,10 +329,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DA6181A01DD67E2A00FF7700 /* Build configuration list for PBXNativeTarget "DDUIKitOSX" */;
 			buildPhases = (
+				ED25675FF5EE80BD30C35022 /* [CP] Check Pods Manifest.lock */,
 				DA6181961DD67E2A00FF7700 /* Sources */,
 				DA6181971DD67E2A00FF7700 /* Frameworks */,
 				DA6181981DD67E2A00FF7700 /* Headers */,
 				DA6181991DD67E2A00FF7700 /* Resources */,
+				3D344BC7E9768A5F4E40463D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -329,7 +342,7 @@
 			);
 			name = DDUIKitOSX;
 			productName = DDUIKitOSX;
-			productReference = DA61819B1DD67E2A00FF7700 /* DDUIKitOSX.framework */;
+			productReference = DA61819B1DD67E2A00FF7700 /* DDUIKit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		DA6D254B1D83C411003CFC30 /* DDUIKit */ = {
@@ -445,6 +458,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		3D344BC7E9768A5F4E40463D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DDUIKitOSX/Pods-DDUIKitOSX-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		4342C6FAB5375D9F24F83695 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -457,7 +485,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AE0CF3068268C3A16A6C3FA2 /* [CP] Embed Pods Frameworks */ = {
@@ -502,7 +530,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ED25675FF5EE80BD30C35022 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		EE8C0124AFED65E334CD0C28 /* [CP] Copy Pods Resources */ = {
@@ -527,6 +570,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA5190D31DECFC5500F62F9E /* DDBaseModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,6 +637,7 @@
 /* Begin XCBuildConfiguration section */
 		DA6181A11DD67E2A00FF7700 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 595A3EDD12173D37E007EF3F /* Pods-DDUIKitOSX.debug.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -610,7 +655,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.DDUIKitOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DDUIKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -620,6 +665,7 @@
 		};
 		DA6181A21DD67E2A00FF7700 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B833537EA9BACFE06616BCC2 /* Pods-DDUIKitOSX.release.xcconfig */;
 			buildSettings = {
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
@@ -637,7 +683,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_BUNDLE_IDENTIFIER = io.marboo.DDUIKitOSX;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = DDUIKit;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -826,6 +872,7 @@
 				DA6181A21DD67E2A00FF7700 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA6D25571D83C411003CFC30 /* Build configuration list for PBXNativeTarget "DDUIKit" */ = {
 			isa = XCConfigurationList;

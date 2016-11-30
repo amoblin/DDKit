@@ -1,6 +1,7 @@
 
 $projectName = "DDKitDemo"
-$scheme = "DDUIKit"
+#$scheme = "DDUIKit"
+$scheme = "DDUIKitOSX"
 $PROJECT_NAME = $projectName
 $BUILD_DIR = "Build"
 $CONFIGURATION = "Release"
@@ -18,4 +19,9 @@ task :default do |t|
 
   sh "lipo -create -output \"#{$UNIVERSAL_OUTPUTFOLDER}/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphonesimulator/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework/#{$scheme}\""
 
+end
+
+task :osx do |t|
+  sh "mkdir -p \"#{$UNIVERSAL_OUTPUTFOLDER}\""
+  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk macosx10.12 SYMROOT=$(PWD)/Build"
 end

@@ -1,27 +1,27 @@
 
 $projectName = "DDKitDemo"
-#$scheme = "DDUIKit"
-$scheme = "DDUIKitOSX"
+$scheme = "DDUIKit"
 $PROJECT_NAME = $projectName
 $BUILD_DIR = "Build"
 $CONFIGURATION = "Release"
-#$UNIVERSAL_OUTPUTFOLDER = "#{$BUILD_DIR}/#{$CONFIGURATION}-universal"
-$UNIVERSAL_OUTPUTFOLDER = "#{$BUILD_DIR}"
+$IOS_OUTPUTFOLDER = "#{$BUILD_DIR}/Release-iOS"
+$MACOS_OUTPUTFOLDER = "#{$BUILD_DIR}/Release-macOS"
 
 task :default do |t|
-  sh "mkdir -p \"#{$UNIVERSAL_OUTPUTFOLDER}\""
+  sh "mkdir -p \"#{$IOS_OUTPUTFOLDER}\""
 
-	sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos10.0 clean"
-  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos10.0 SYMROOT=$(PWD)/Build"
-  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphonesimulator10.0 SYMROOT=$(PWD)/Build"
+	sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos10.1 clean"
+  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos10.1 SYMROOT=$(pwd)/Build"
+  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphonesimulator10.1 SYMROOT=$(pwd)/Build"
 
-  sh "cp -R \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework\" \"#{$UNIVERSAL_OUTPUTFOLDER}/\""
+  sh "cp -R \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework\" \"#{$IOS_OUTPUTFOLDER}/\""
 
-  sh "lipo -create -output \"#{$UNIVERSAL_OUTPUTFOLDER}/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphonesimulator/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework/#{$scheme}\""
+  sh "lipo -create -output \"#{$IOS_OUTPUTFOLDER}/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphonesimulator/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework/#{$scheme}\""
 
 end
 
-task :osx do |t|
-  sh "mkdir -p \"#{$UNIVERSAL_OUTPUTFOLDER}\""
-  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk macosx10.12 SYMROOT=$(PWD)/Build"
+task :macos do |t|
+  sh "mkdir -p \"#{$MACOS_OUTPUTFOLDER}\""
+  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme}OSX -configuration Release -sdk macosx10.12 SYMROOT=$(pwd)/Build"
+  sh "cp -R \"#{$BUILD_DIR}/#{$CONFIGURATION}/#{$scheme}.framework\" \"#{$MACOS_OUTPUTFOLDER}/\""
 end

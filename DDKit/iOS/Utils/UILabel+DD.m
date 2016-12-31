@@ -12,7 +12,7 @@
 
 + (instancetype)labelWithFont:(UIFont *)font textColor:(UIColor *)textColor;
 {
-    UILabel *label = [UILabel new];
+    UILabel *label = [self new];
     label.font = font;
     label.textColor = textColor;
     label.translatesAutoresizingMaskIntoConstraints = NO;

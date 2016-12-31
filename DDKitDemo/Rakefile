@@ -6,13 +6,14 @@ $BUILD_DIR = "Build"
 $CONFIGURATION = "Release"
 $IOS_OUTPUTFOLDER = "#{$BUILD_DIR}/Release-iOS"
 $MACOS_OUTPUTFOLDER = "#{$BUILD_DIR}/Release-macOS"
+$ios_version = "10.2"
 
 task :default do |t|
   sh "mkdir -p \"#{$IOS_OUTPUTFOLDER}\""
 
-	sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos10.1 clean"
-  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos10.1 SYMROOT=$(pwd)/Build"
-  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphonesimulator10.1 SYMROOT=$(pwd)/Build"
+	sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos#{$ios_version} clean"
+  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos#{$ios_version} SYMROOT=$(pwd)/Build"
+  sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphonesimulator#{$ios_version} SYMROOT=$(pwd)/Build"
 
   sh "cp -R \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework\" \"#{$IOS_OUTPUTFOLDER}/\""
 
@@ -21,7 +22,8 @@ task :default do |t|
 end
 
 task :macos do |t|
-  sh "mkdir -p \"#{$MACOS_OUTPUTFOLDER}\""
   sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme}OSX -configuration Release -sdk macosx10.12 SYMROOT=$(pwd)/Build"
+  sh "rm -r \"#{$MACOS_OUTPUTFOLDER}/\""
+  sh "mkdir -p \"#{$MACOS_OUTPUTFOLDER}\""
   sh "cp -R \"#{$BUILD_DIR}/#{$CONFIGURATION}/#{$scheme}.framework\" \"#{$MACOS_OUTPUTFOLDER}/\""
 end

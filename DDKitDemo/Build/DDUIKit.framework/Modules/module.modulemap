@@ -1,6 +1,0 @@
-framework module DDUIKit {
-  umbrella header "DDUIKit.h"
-
-  export *
-  module * { export * }
-}

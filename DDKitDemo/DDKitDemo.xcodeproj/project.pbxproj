@@ -48,6 +48,7 @@
 		DA6D25971D83C43E003CFC30 /* UIView+Frame.h in Headers */ = {isa = PBXBuildFile; fileRef = DA6D25741D83C43E003CFC30 /* UIView+Frame.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6D25981D83C43E003CFC30 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D25751D83C43E003CFC30 /* UIView+Frame.m */; };
 		DA6D25991D83C43E003CFC30 /* UIView+Frame.m in Sources */ = {isa = PBXBuildFile; fileRef = DA6D25751D83C43E003CFC30 /* UIView+Frame.m */; };
+		DAB4CBAD1E02400100799EF4 /* demo.png in Resources */ = {isa = PBXBuildFile; fileRef = DAB4CBAC1E02400100799EF4 /* demo.png */; };
 		DAB503D01D63CECB00B56E1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB503CF1D63CECB00B56E1B /* main.m */; };
 		DAB503D31D63CECB00B56E1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB503D21D63CECB00B56E1B /* AppDelegate.m */; };
 		DAB503D61D63CECB00B56E1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DAB503D51D63CECB00B56E1B /* ViewController.m */; };
@@ -100,6 +101,7 @@
 		DA6D25731D83C43E003CFC30 /* UILabel+DD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DD.m"; sourceTree = "<group>"; };
 		DA6D25741D83C43E003CFC30 /* UIView+Frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Frame.h"; sourceTree = "<group>"; };
 		DA6D25751D83C43E003CFC30 /* UIView+Frame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Frame.m"; sourceTree = "<group>"; };
+		DAB4CBAC1E02400100799EF4 /* demo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = demo.png; sourceTree = "<group>"; };
 		DAB503CB1D63CECB00B56E1B /* DDKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DDKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DAB503CF1D63CECB00B56E1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DAB503D11D63CECB00B56E1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 		DAB503CD1D63CECB00B56E1B /* DDKitDemo */ = {
 			isa = PBXGroup;
 			children = (
+				DAB4CBAC1E02400100799EF4 /* demo.png */,
 				DAB503D11D63CECB00B56E1B /* AppDelegate.h */,
 				DAB503D21D63CECB00B56E1B /* AppDelegate.m */,
 				DAB503D41D63CECB00B56E1B /* ViewController.h */,
@@ -449,6 +452,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAB4CBAD1E02400100799EF4 /* demo.png in Resources */,
 				DAB503DE1D63CECB00B56E1B /* LaunchScreen.storyboard in Resources */,
 				DAB503DB1D63CECB00B56E1B /* Assets.xcassets in Resources */,
 				DAB503D91D63CECB00B56E1B /* Main.storyboard in Resources */,

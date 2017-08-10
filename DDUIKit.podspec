@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DDUIKit"
-  s.version      = "0.6"
+  s.version      = "0.6.1"
   s.summary      = "DDKit provides convenient tools for build ui."
 
   s.description  = <<-DESC
@@ -29,7 +29,7 @@ DDKit provides convenient tools for build ui."
   s.source_files  = "DDKit", "DDKit/**/*.{h,m}"
   #s.exclude_files = "Classes/Exclude"
 
-  s.public_header_files = "DDKit/**/*.h"
+  s.public_header_files = "DDKit/*.h", "DDKit/**/*.h"
 
   s.requires_arc = true
 

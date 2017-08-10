@@ -2,10 +2,10 @@
 $projectName = "DDKitDemo"
 $scheme = "DDUIKit"
 $PROJECT_NAME = $projectName
-$BUILD_DIR = "Build"
+$PRODUCT_DIR = "Product"
 $CONFIGURATION = "Release"
-$IOS_OUTPUTFOLDER = "#{$BUILD_DIR}/Release-iOS"
-$MACOS_OUTPUTFOLDER = "#{$BUILD_DIR}/Release-macOS"
+$IOS_OUTPUTFOLDER = "#{$PRODUCT_DIR}/Release-iOS"
+$MACOS_OUTPUTFOLDER = "#{$PRODUCT_DIR}/Release-macOS"
 $ios_version = "10.2"
 
 task :default do |t|
@@ -15,9 +15,9 @@ task :default do |t|
   sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphoneos#{$ios_version} SYMROOT=$(pwd)/Build"
   sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme} -configuration Release -sdk iphonesimulator#{$ios_version} SYMROOT=$(pwd)/Build"
 
-  sh "cp -R \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework\" \"#{$IOS_OUTPUTFOLDER}/\""
+  sh "cp -R \"Build/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework\" \"#{$IOS_OUTPUTFOLDER}/\""
 
-  sh "lipo -create -output \"#{$IOS_OUTPUTFOLDER}/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphonesimulator/#{$scheme}.framework/#{$scheme}\" \"#{$BUILD_DIR}/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework/#{$scheme}\""
+  sh "lipo -create -output \"#{$IOS_OUTPUTFOLDER}/#{$scheme}.framework/#{$scheme}\" \"Build/#{$CONFIGURATION}-iphonesimulator/#{$scheme}.framework/#{$scheme}\" \"Build/#{$CONFIGURATION}-iphoneos/#{$scheme}.framework/#{$scheme}\""
 
 end
 
@@ -25,5 +25,5 @@ task :macos do |t|
   sh "xcodebuild -workspace #{$projectName}.xcworkspace -scheme #{$scheme}OSX -configuration Release -sdk macosx10.12 SYMROOT=$(pwd)/Build"
   sh "rm -r \"#{$MACOS_OUTPUTFOLDER}/\""
   sh "mkdir -p \"#{$MACOS_OUTPUTFOLDER}\""
-  sh "cp -R \"#{$BUILD_DIR}/#{$CONFIGURATION}/#{$scheme}.framework\" \"#{$MACOS_OUTPUTFOLDER}/\""
+  sh "cp -R \"#{$PRODUCT_DIR}/#{$CONFIGURATION}/#{$scheme}.framework\" \"#{$MACOS_OUTPUTFOLDER}/\""
 end

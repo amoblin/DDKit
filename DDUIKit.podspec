@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "DDUIKit"
-  s.version      = "0.6.1"
+  s.version      = "0.8"
   s.summary      = "DDKit provides convenient tools for build ui."
 
   s.description  = <<-DESC

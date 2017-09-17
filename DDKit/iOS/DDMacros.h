@@ -50,6 +50,6 @@ return _##SS_CLASSNAME##_sharedInstance; \
 #define VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
 #define REVISION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
 
-#define VERSION_INFO [NSString stringWithFormat:@"%@(%@)", VERSION, REVISION];
+#define VERSION_INFO [NSString stringWithFormat:@"%@(%@)", VERSION, REVISION]
 
 #endif /* DDMacros_h */

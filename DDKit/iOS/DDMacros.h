@@ -47,4 +47,9 @@ return _##SS_CLASSNAME##_sharedInstance; \
 
 #define SCREEN_SIZE     ([UIScreen mainScreen].bounds.size)
 
+#define VERSION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleShortVersionString"]
+#define REVISION [[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleVersion"]
+
+#define VERSION_INFO [NSString stringWithFormat:@"%@(%@)", VERSION, REVISION];
+
 #endif /* DDMacros_h */
